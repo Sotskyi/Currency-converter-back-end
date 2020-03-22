@@ -1,0 +1,18 @@
+.nav-container{
+
+    display: flex;
+    justify-content: center;
+   
+    
+  
+    
+  
+}
+.nav-container span{
+    margin:2px ;
+   
+}
+.nav-container a {
+    text-decoration: none;
+    color:inherit;
+}

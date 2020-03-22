@@ -1,0 +1,18 @@
+canvas {
+  background-color: #ffffff;
+  height: 200px !important;
+  width: 300px !important;
+}
+.chart {
+  display: flex;
+
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  canvas {
+    font-size: 5px;
+    height: 107px !important;
+    width: 250px !important;
+  }
+}

@@ -1,0 +1,31 @@
+p {margin-top:10px;
+  z-index: 1211;
+}
+.footer{
+  top:84px;
+}
+a{
+  text-decoration: none;
+  color:#4ce1b6;
+}
+.about-container {
+  
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+  text-align: center;
+  height: 482px;
+  width: 1200;
+  background-color: #f2f4f7;
+ 
+height: 69vh;
+}
+@media (max-width: 640px) {
+  .about-container {
+    height: 73vh;
+
+}
+.footer{
+  top:131px!important;
+}
+}
