@@ -10,6 +10,7 @@
 }
 .flex-container {
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: row;
   height: 65%;
@@ -18,19 +19,23 @@
 .flex-item {
   position: relative;
   margin: 5px;
-  height: 144px;
-  width: 100%;
+  /* height: 200px;
+  width: 300px; */
+  /* height: 144px;
+  width: 100%; */
 }
 .currency-info {
+  z-index: 1111;
   display: flex;
   flex-direction: row;
   align-items: center;
   position: absolute;
-  left: 206px;
-  bottom: 118px;
+  margin-left: 63%;
+  /* left: 206px;
+  bottom: 118px; */
 }
 .custom-select {
-  width: 36px;
+ 
   overflow: hidden;
 
   position: relative;
@@ -64,6 +69,7 @@
 @media (max-width: 640px) {
   .flex-container {
     flex-direction: column-reverse;
+    justify-content: space-evenly;
     /* height: 285px; */
   }
   .flex-container {

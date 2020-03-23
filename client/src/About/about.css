@@ -1,3 +1,4 @@
+
 p {margin-top:10px;
   z-index: 1211;
 }
@@ -9,16 +10,16 @@ a{
   color:#4ce1b6;
 }
 .about-container {
-  
+  min-height: calc(100vh - 162px);
  display: flex;
  flex-direction: column;
  justify-content: center;
   text-align: center;
-  height: 482px;
+ 
   width: 1200;
   background-color: #f2f4f7;
  
-height: 69vh;
+/* height: 72vh; */
 }
 @media (max-width: 640px) {
   .about-container {

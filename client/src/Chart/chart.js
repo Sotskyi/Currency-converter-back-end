@@ -142,7 +142,7 @@ class Chart extends React.Component {
                 {
                   ticks: {
                     fontColor: "#6e7080",
-                    fontSize: 5,
+                    fontSize: 6.5,
                     stepSize: 1,
                     beginAtZero: true
                   },
@@ -155,7 +155,7 @@ class Chart extends React.Component {
                 {
                   ticks: {
                     fontColor: "#6e7080",
-                    fontSize: 5,
+                    fontSize: 6.5,
                     stepSize: 1,
                     beginAtZero: false
                   },

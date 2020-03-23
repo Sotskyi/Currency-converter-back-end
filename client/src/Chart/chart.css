@@ -1,4 +1,5 @@
 canvas {
+  position: relative;
   background-color: #ffffff;
   height: 200px !important;
   width: 300px !important;
@@ -12,7 +13,7 @@ canvas {
 @media (max-width: 640px) {
   canvas {
     font-size: 5px;
-    height: 107px !important;
-    width: 250px !important;
+    height: 130px !important;
+    width: 265px !important;
   }
 }
