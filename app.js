@@ -24,7 +24,7 @@ const currencyValue = require('./routes/currencyValue')
 
   })
 cron.job.start();
- app.listen(5000,()=>console.log("aapp has been started"))
+ app.listen(5000)
 
  
 
