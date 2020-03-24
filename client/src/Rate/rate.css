@@ -9,12 +9,14 @@
   text-align: center;
 }
 .flex-container {
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   height: 65%;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 .flex-item {
   position: relative;
