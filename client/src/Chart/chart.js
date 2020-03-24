@@ -141,10 +141,11 @@ class Chart extends React.Component {
               xAxes: [
                 {
                   ticks: {
-                    fontColor: "#6e7080",
-                    fontSize: 6.5,
+                    fontColor: "#0081ff94",
+                    fontSize: 10,
                     stepSize: 1,
-                    beginAtZero: true
+                    beginAtZero: true,
+                    fontFamily:"'Gentium Basic', serif;"
                   },
                   gridLines: {
                     display: false
@@ -154,8 +155,10 @@ class Chart extends React.Component {
               yAxes: [
                 {
                   ticks: {
-                    fontColor: "#6e7080",
-                    fontSize: 6.5,
+                    fontWeight:"lighter",
+                    fontFamily:"'Gentium Basic', serif;",
+                    fontColor: "#0081ff94",
+                    fontSize: 9,
                     stepSize: 1,
                     beginAtZero: false
                   },
@@ -169,7 +172,7 @@ class Chart extends React.Component {
             title: {
               display: true,
               text: "Base 1 dollar ",
-              fontSize: 10,
+              fontSize: 9,
               fontColor: "#e5e5e5"
             },
             legend: {

@@ -27,38 +27,13 @@ form{
 
 }
 .number-wrap {
-  width: 73px;
-  height:5px;
-  font-size: 8px;
-}
-.custom-select {
-  width: 36px;
-  overflow: hidden;
-
-  position: relative;
-  padding: 4px 0;
-}
-.custom-select:after {
-  width: 0;
-  height: 0;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 4px solid #4ce1b6;
-  position: absolute;
-  top: 40%;
-  right: 5px;
-  content: "";
-  z-index: 98;
-}
-.custom-select select {
   outline: none;
-  font-size: 6px;
-  width: 60px;
-  border: 0;
-  position: relative;
-  z-index: 99;
-  background: none;
+  width: 111px;
+  height:9px;
+  font-size: 10px;
+  background-color:#ebd5ff ;
 }
+
 .calculator-title {
   text-align: center;
   display: inline;
@@ -78,7 +53,7 @@ form{
   display: inline-block;
   cursor: pointer;
   color:white;
-  font-family: Arial;
+  font-family: 'Gentium Basic', serif;
   font-size: 6px;
   padding: 2px 4px;
   text-decoration: none;
@@ -97,7 +72,7 @@ form{
  width: 40%;
   display: flex;
   flex-direction: column;
-  font-size: 11px;
+  font-size:12px;
 
   
   

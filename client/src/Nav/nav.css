@@ -13,6 +13,8 @@
    
 }
 .nav-container a {
+    margin:12px;
     text-decoration: none;
     color:inherit;
+    
 }

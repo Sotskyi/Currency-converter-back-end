@@ -1,8 +1,8 @@
 canvas {
   position: relative;
   background-color: #ffffff;
-  height: 200px !important;
-  width: 300px !important;
+  height: 248px !important;
+  width: 348px !important;
 }
 .chart {
   display: flex;
