@@ -27,7 +27,7 @@ class Rate extends React.Component {
       "JPY",
       "THB",
       "CHF",
-      "EUR",
+      
       "MYR",
       "BGN",
       "TRY",
@@ -35,7 +35,7 @@ class Rate extends React.Component {
       "NOK",
       "NZD",
       "ZAR",
-      "USD",
+      
       "MXN",
       "ILS",
       "KRW",
