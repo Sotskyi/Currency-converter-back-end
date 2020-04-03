@@ -36,9 +36,8 @@ module.exports.job = new CronJob(
    
     let rates=jsonRestCurrency.rates;
    
-    let date = new Date();
-    console.log(date);
-    let hours=date.getHours();
+    
+    let hours=new Date().getHours();
     
     if(hours===23) {await dbSchema.create({"currencyValue":rates,"chart":1})}
     await dbSchema.create({"currencyValue":rates});

@@ -30,17 +30,20 @@ exports.getValue = async (req, res, next) => {
 exports.getValueForChart = async (req, res, next) => {
   try {
 
-    let today = new Date();
-    
-    today.setDate(today.getDate() -5);
-    let past=today.toISOString()
-    console.log(past )
+    // let past = new Date().setDate(new Date().getDate()-5)
+    // let pastTOstring=new Date(past).toISOString()
+    // today.setDate(today.getDate() -5);
+    // let past=today.toISOString()
+    console.log()
     const queryName =   req.query.chartdata;
+    
+    
+    const findValue = await dbSchema.find({ 'chart': 1 }).sort({_id: -1}).limit(5);
 
-    const findValue = await dbSchema.find({"createdAt":{"$gte":past},"chart":1});
-
-   
-    const result =  await findValue.map((elem)=> elem.currencyValue[queryName] );
+    let withoutTODAY= findValue.filter((elem)=> {  if (new Date(elem.createdAt)
+      .getDate()=== new Date().getDate())
+      {  return false  } else return true }  )
+    const result =   withoutTODAY.map((elem)=> elem.currencyValue[queryName] );
    
     
     return res.status(201).json({

@@ -21,12 +21,12 @@ class Chart extends React.Component {
       "December"
     ];
     this.today = new Date();
-    this.now = this.today.getDate();
-    this.oneDay = this.today.getDate() - 1;
-    this.twoDay = this.today.getDate() - 2;
-    this.threeDay = this.today.getDate() - 3;
+    this.now = new Date().getDate();
+    this.oneDay = new Date(new Date().setDate(new Date().getDate()-1)).getDate();
+    this.twoDay = new Date(new Date().setDate(new Date().getDate()-2)).getDate();
+    this.threeDay =new Date( new Date().setDate(new Date().getDate()-3)).getDate();
     this.fourDay =
-      this.today.getDate() - 4 + " " + this.monthNames[this.today.getMonth()];
+    new Date(new Date().setDate(new Date().getDate()-4)).getDate() + " " + this.monthNames[new Date(new Date().setDate(new Date().getDate()-4)).getMonth()];
 
     this.state = {
       counter: false,
@@ -60,6 +60,7 @@ class Chart extends React.Component {
           (Math.floor(+elem * Math.pow(10, 2)) / Math.pow(10, 2)).toFixed(2)
         );
         dataForChart.push(lastelement);
+        console.log(dataForChart)
 
         if (this.state.counter === false) {
           this.setState({
@@ -145,7 +146,7 @@ class Chart extends React.Component {
                     fontSize: 10,
                     stepSize: 1,
                     beginAtZero: true,
-                    fontFamily:"'Gentium Basic', serif;"
+                    fontFamily:"'Gentium Basic', serif"
                   },
                   gridLines: {
                     display: false
