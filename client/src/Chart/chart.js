@@ -59,8 +59,8 @@ class Chart extends React.Component {
         let dataForChart = r.currencyValue.map(elem =>
           (Math.floor(+elem * Math.pow(10, 2)) / Math.pow(10, 2)).toFixed(2)
         );
-        dataForChart.push(lastelement);
-        console.log(dataForChart)
+        if(dataForChart.length==4){dataForChart.push(lastelement)}
+      
 
         if (this.state.counter === false) {
           this.setState({
