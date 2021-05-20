@@ -28,5 +28,4 @@
     "concurrently": "^5.1.0",
     "nodemon": "^2.0.2"
   }
- 
 }
